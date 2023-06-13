@@ -1,6 +1,7 @@
 import glob 
 from pathlib import Path
 from infinix.utils import load_plug
+from sys import argv
 import logging 
 from . import bot 
 
@@ -17,5 +18,11 @@ for name in files:
 print("INFINIX BOT STARTED & LOADED ALL PLUGINS")   
  
 if __name__ == "__main__":
-   bot.run_until_disconnected() 
+if len(argv) not in (1, 3, 4):
+
+    bot.disconnect()
+
+else:
+
+    bot.run_until_disconnected()
   
