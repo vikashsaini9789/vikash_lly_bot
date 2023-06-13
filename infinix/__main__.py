@@ -18,11 +18,13 @@ for name in files:
 print("INFINIX BOT STARTED & LOADED ALL PLUGINS")   
  
 if __name__ == "__main__":
-if len(argv) not in (1, 3, 4):
+
+  
+  if len(argv) not in (1, 3, 4):
 
     bot.disconnect()
 
-else:
+  else:
 
     bot.run_until_disconnected()
   
